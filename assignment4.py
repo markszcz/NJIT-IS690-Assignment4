@@ -13,7 +13,7 @@ def img2text(url):
 
 
 def getPlantCareInstructions(my_plant):
-    ds = load_dataset("jibrand/Plant-dataset", split="train")
+    ds = load_dataset("jibrand/plant-database-2", split="train")
     my_plant_index = ds['Plant'].index(my_plant)
     return ds[my_plant_index]
 
